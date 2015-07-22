@@ -1,0 +1,9 @@
+// Must wrap jquery in jQuery wrapper to avoid conflict with wordpress.
+jQuery(document).ready(function($) {
+  $( ".nav-toggle" ).click(function() {
+    $(this).toggleClass("open");
+    $("nav").fadeToggle(100);
+
+    return false;
+  });
+});

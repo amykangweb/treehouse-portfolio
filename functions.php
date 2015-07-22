@@ -9,4 +9,14 @@ function wpt_theme_styles() {
 }
 add_action('wp_enqueue_scripts', 'wpt_theme_styles');
 
+function wpt_theme_js() {
+
+  // Set to false if you don't want this to load in the footer.
+  wp_enqueue_script('modernizr_js', get_template_directory_uri() . '/js/modernizr.js', '', '', false);
+  // First param array of dependent files. Foundation dependent on jquery.
+  wp_enqueue_script('foundation_js', get_template_directory_uri() . '/js/foundation.js', array('jquery'), '', true);
+  wp_enqueue_script('main_js', get_template_directory_uri() . '/js/app.js', array('jquery', 'foundation_js'), '', true);
+}
+add_action('wp_enqueue_scripts', 'wpt_theme_js');
+
 ?>
