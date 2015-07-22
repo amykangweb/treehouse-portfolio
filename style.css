@@ -2,14 +2,89 @@
 Theme Name: Treehouse Portfolio Theme
 Author: Treehouse
 Author URI: http://teamtreehouse.com/
-Description: A post modern, simple, responsive portfolio theme designed in Wordpress
-Theme Development Course.
+Description: A post modern, simple, responsive portfolio theme designed in WordPress Theme Development course at Treehouse.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, white, light, one-column, two-columns, left-sidebar, flexible-width,
-fluid
+Tags: black, white, light, one-column, two-columns, left-sidebar, flexible-width, fluid-layout, responsive-layout, custom-menu, featured-images
 
 At Treehouse we believe that you should reach for your dreams.
-You are welcome to use this theme privately or commercially.
+You are welcome to use this theme privately or commercially you want to help accomplish those dreams!
 */
+
+@-moz-keyframes logo-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes logo-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.no-max {
+  max-width: 100%;
+}
+
+.no-max.pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body {
+  font-size: 62.5%;
+  letter-spacing: 0.025em;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Asap", sans-serif !important;
+  line-height: 1.15em;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-links li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.social-links .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
