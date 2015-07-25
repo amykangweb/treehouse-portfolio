@@ -1,5 +1,18 @@
 <?php
 
+add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
+
+function register_theme_menus() {
+  // Can add multiple menus
+  register_nav_menus(
+    array(
+      'primary-menu' => _('Primary Menu')
+    )
+  );
+}
+add_action('init', 'register_theme_menus');
+
 function wpt_theme_styles() {
   wp_enqueue_style('foundation_css', get_template_directory_uri() . '/css/foundation.css');
   // wp_enqueue_style('normalize_css', get_template_directory_uri() . '/css/normalize.css');
